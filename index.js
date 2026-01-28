@@ -79,6 +79,7 @@ function navigate() {
   
   // Close mobile menu if open
   document.getElementById('mobile-menu').classList.add('hidden');
+  document.getElementById('mobile-menu').classList.add('flex');
 }
 
 window.addEventListener('hashchange', navigate);
@@ -88,7 +89,6 @@ window.addEventListener('load', navigate);
 document.getElementById('menu-toggle').addEventListener('click', () => {
   const menu = document.getElementById('mobile-menu');
   menu.classList.toggle('hidden');
-  menu.classList.toggle('flex');
 });
 
 // --- NAVBAR SCROLL EFFECT ---
