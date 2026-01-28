@@ -4,48 +4,50 @@ const SCHEDULE = [
   {
     day: 'Monday',
     sessions: [
-      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)', instructor: 'Gym Staff', intensity: 'Medium' },
-      { time: '19:00 - 20:00', name: 'Carded Amateurs Only', instructor: 'Pro Team', intensity: 'High' },
-      { time: '20:00 - 21:30', name: 'Seniors/Adults', instructor: 'Lead Coach', intensity: 'High' },
+      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)'},
+      { time: '19:00 - 20:00', name: 'Carded Amateurs Only'},
+      { time: '20:00 - 21:30', name: 'Seniors/Adults'},
     ]
   },
   {
     day: 'Tuesday',
     sessions: [
-      { time: 'TBA', name: "121's & Open Gym", instructor: 'Check Social Media', intensity: 'Medium' },
+      { time: 'TBA', name: "121's & Open Gym"},
     ]
   },
   {
     day: 'Wednesday',
     sessions: [
-      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)', instructor: 'Gym Staff', intensity: 'Medium' },
-      { time: '19:00 - 20:00', name: 'Carded Amateurs Only', instructor: 'Pro Team', intensity: 'High' },
-      { time: '20:00 - 21:30', name: 'Seniors/Adults', instructor: 'Lead Coach', intensity: 'High' },
+      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)'},
+      { time: '19:00 - 20:00', name: 'Carded Amateurs Only'},
+      { time: '20:00 - 21:30', name: 'Seniors/Adults'},
     ]
   },
   {
     day: 'Thursday',
     sessions: [
-      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)', instructor: 'Gym Staff', intensity: 'Medium' },
-      { time: '19:00 - 20:00', name: 'Carded Amateurs Only', instructor: 'Pro Team', intensity: 'High' },
-      { time: '20:00 - 21:30', name: 'Seniors/Adults', instructor: 'Lead Coach', intensity: 'High' },
+      { time: '18:00 - 19:00', name: 'Boxing (9yrs+)' },
+      { time: '19:00 - 20:00', name: 'Carded Amateurs Only'},
+      { time: '20:00 - 21:30', name: 'Seniors/Adults' },
     ]
   },
   {
     day: 'Friday',
     sessions: [
-      { time: 'Available', name: "121's & Private Hire", instructor: 'By Appointment', intensity: 'Low' },
+      { time: 'Available', name: "121's & Private Hire"},
     ]
   }
 ];
 
 const GALLERY_ITEMS = [
-  { url: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1000&auto=format&fit=crop', title: 'Main Training Area', category: 'Facility' },
-  { url: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1000&auto=format&fit=crop', title: 'Heavy Bag Row', category: 'Facility' },
-  { url: 'https://images.unsplash.com/photo-1517438322351-375848d00c31?q=80&w=1000&auto=format&fit=crop', title: 'Intense Mitt Work', category: 'Training' },
-  { url: 'https://images.unsplash.com/photo-1552072047-54d036433021?q=80&w=1000&auto=format&fit=crop', title: 'Youth Program', category: 'Training' },
-  { url: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1000&auto=format&fit=crop', title: 'Professional Sparring', category: 'Sparring' },
-  { url: 'https://images.unsplash.com/photo-1634620019234-a2929e47266a?q=80&w=1000&auto=format&fit=crop', title: 'Strength Section', category: 'Facility' },
+//   { url: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1000&auto=format&fit=crop', title: 'Main Training Area', category: 'Facility' },
+//   { url: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1000&auto=format&fit=crop', title: 'Heavy Bag Row', category: 'Facility' },
+//   { url: 'https://images.unsplash.com/photo-1517438322351-375848d00c31?q=80&w=1000&auto=format&fit=crop', title: 'Intense Mitt Work', category: 'Training' },
+//   { url: 'https://images.unsplash.com/photo-1552072047-54d036433021?q=80&w=1000&auto=format&fit=crop', title: 'Youth Program', category: 'Training' },
+//   { url: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1000&auto=format&fit=crop', title: 'Professional Sparring', category: 'Sparring' },
+//   { url: 'https://images.unsplash.com/photo-1634620019234-a2929e47266a?q=80&w=1000&auto=format&fit=crop', title: 'Strength Section', category: 'Facility' },
+
+
 ];
 
 // --- NAVIGATION LOGIC ---
@@ -121,14 +123,10 @@ function renderTimetable() {
   const scheduleForDay = SCHEDULE.find(d => d.day === currentDay);
   grid.innerHTML = scheduleForDay.sessions.map(session => `
     <div class="bg-[#111111] border border-white/5 border-l-4 border-l-red-600 p-10 hover:bg-[#151515] transition-all group shadow-lg">
-      <div class="flex justify-between items-center mb-8">
-         <span class="text-[11px] font-bold text-stone-500 tracking-[0.2em] uppercase">${session.intensity} INTENSITY</span>
-      </div>
+
       <h3 class="text-2xl font-black stencil-text mb-2 text-stone-200">${session.name}</h3>
       <div class="text-red-600 font-bold text-lg tracking-widest mb-8">${session.time}</div>
-      <div class="pt-6 border-t border-white/5 flex items-center text-[11px] font-bold text-stone-600 tracking-widest uppercase">
-        <span>${session.instructor}</span>
-      </div>
+
     </div>
   `).join('');
 
