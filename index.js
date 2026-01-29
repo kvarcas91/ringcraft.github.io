@@ -36,6 +36,18 @@ const SCHEDULE = [
     sessions: [
       { time: 'Available', name: "121's & Private Hire"},
     ]
+  },
+    {
+    day: 'Saturday',
+    sessions: [
+      { time: 'Available', name: "121's & Private Hire"},
+    ]
+  },
+    {
+    day: 'Sunday',
+    sessions: [
+      { time: 'Available', name: "121's & Private Hire"},
+    ]
   }
 ];
 
