@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
+  <style>
         :root {
             --bg-primary: #0a0a0a;
             --text-primary: #e7e5e4;
@@ -68,6 +68,15 @@
         .nav-link.active {
             color: #f5f5f4;
             border-bottom: 2px solid var(--accent);
+        }
+        .honours-card {
+            border-left: 2px solid var(--accent);
+            background: rgba(220, 38, 38, 0.03);
+            transition: all 0.3s ease;
+        }
+        .honours-card:hover {
+            background: rgba(220, 38, 38, 0.08);
+            transform: translateX(5px);
         }
     </style>
 <script type="importmap">
@@ -159,6 +168,96 @@
                         <p class="text-stone-400 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                             Conroys Ringcraft is a traditional boxing gym where technique meets toughness. We don't just train athletes; we forge character through the sweet science of boxing.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="honours-list" class="py-32 px-6 bg-[#0a0a0a] border-y border-white/5">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-24">
+                        <span class="text-red-600 font-bold tracking-[0.5em] uppercase text-xs mb-4 block">Hall of Fame</span>
+                        <h2 class="text-5xl md:text-7xl font-black stencil-text text-white mb-6">2023/24 <span class="text-red-600">HONOURS</span></h2>
+                        <div class="h-1 w-24 bg-red-600 mx-auto"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Category: National & Regional Titles -->
+                        <div class="space-y-6">
+                            <h3 class="stencil-text text-2xl text-stone-500 border-b border-white/10 pb-4 mb-8">REGIONAL SUCCESS</h3>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">4x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">Home Counties Champions</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">Regional Elite Ranking</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">3x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">National Schools Champ Finals</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">Silver Medallists</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: Cup Championships -->
+                        <div class="space-y-6">
+                            <h3 class="stencil-text text-2xl text-stone-500 border-b border-white/10 pb-4 mb-8">CUP CHAMPIONSHIPS</h3>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">2x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">Manchester Box Cup (Seniors)</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">1x Gold • 1x Silver</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">3x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">Bristol Box Cup (Schools)</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">2x Gold • 1x Silver</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">5x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">Manchester Box Cup (Schools)</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">1x Gold • 4x Silver</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: International Representation -->
+                        <div class="space-y-6">
+                            <h3 class="stencil-text text-2xl text-stone-500 border-b border-white/10 pb-4 mb-8">INTERNATIONAL</h3>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">1x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">England Selection</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">Three Nations Championships (Schools)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="honours-card p-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-red-600 text-3xl font-black leading-none">1x</span>
+                                    <div>
+                                        <p class="text-white font-bold tracking-widest uppercase text-sm leading-tight">GB Schools Three Nations</p>
+                                        <p class="text-stone-600 text-[10px] uppercase font-bold mt-1">Silver Medal Winner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
